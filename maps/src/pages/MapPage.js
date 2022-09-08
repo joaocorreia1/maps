@@ -23,7 +23,15 @@ const MapPage = () => {
           center={position}
           zoom={15}
         >
-          <Marker position={position} />
+          <Marker
+            position={position}
+            options={{
+              label: {
+                text: "Turn2C",
+                className: "map-marker",
+              },
+            }}
+          />
         </GoogleMap>
       ) : (
         <></>
